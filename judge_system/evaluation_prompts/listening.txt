@@ -1,0 +1,115 @@
+Xét đề thi IELTS Listening part 3 sau
+
+Hãy trả về cuộc gọi API này duy nhất một số nằm trong khoảng 0 đến 100 là điểm được đánh giá cho bài. Không trả về đoạn văn bản thừa nào, chỉ một số duy nhất.
+
+Tất nhiên, đề thi này có ngôn ngữ chính là tiếng Anh :D
+
+Về mặt nội dung, đề thi này mô phỏng theo đề thi IELTS Listening thực. 
+Hãy refer to online resources để biết thêm về format và nội dung của đề thi IELTS Listening ở từng part. 
+Lưu ý: hãy xem xét 5 ví dụ cho part tương ứng đã được yêu cầu, nhằm cung cấp hiểu biết cơ bản về dạng bài và format của đề thi.
+
+Đề thi này được cung cấp dưới dạng text và sử dụng script thay thế cho các phần audio.
+
+Đề thi có thể chia thành nhiều phần với các dạng câu hỏi khác nhau, tạm gọi là các subtask. Mỗi một subtask ứng với một đoạn script liền mạch.
+
+Trước khi bắt đầu mỗi subtask sẽ có đoạn thoại ngắn bởi announcer để giới thiệu về nhiệm vụ, loại câu hỏi, và cách thức điền đáp án (ví dụ: 'đáp án gồm một từ hoặc/và một số').
+Bạn có thể tham khảo thêm về format giới thiệu trong các ví dụ bạn tìm thấy.
+
+Đề thi phải gồm đúng $10$ câu hỏi và là một Part đầy đủ trong một đề thi IELTS Listening chuẩn.
+
+Các câu hỏi xuất hiện ở nhiều dạng và trong mỗi dạng, chúng cũng có thể xuất hiện theo kiểu khác nhau -- hãy tham khảo phần nội dung dưới đây.
+Nói chung, có một số dạng câu hỏi có thể xuất hiện trong đề thi như sau:
+
+**Sentence Completion**
+
+- Description: Điền thông tin thiếu vào chỗ trống
+- Định dạng câu hỏi trên text/script: "Multiple-answers questions use [] or [ ] for incorrect answers and [*] for correct answers."; 
+trong text đề thi phải nêu rõ các đáp án được chấp nhận, bao gồm nhiều cách viết khác nhau của đáp án tiềm năng, ví dụ: đáp án là January 1 thì đề thi phải công nhận các đáp án January 1, 1st January là đúng.
+Việc này để đảm bảo công nhận được các cách viết khác nhau (viết thường/hoa, sử dụng wording kiểu khác) của đáp án đúng.
+
+**Information Matching**
+
+- Description: Có một số nhận định và một số các tags có thể gán cho chúng; với mỗi nhận định hãy chọn tag phù hợp duy nhất với nó. 
+Một ví dụ đơn giản là gán True/False/Not given cho một số các statements, hoặc gán nhiệm vụ được giao cho từng học sinh trong một nhóm
+- Định dạng câu hỏi trên text/script: Các tags sẽ được label theo một cách nào đấy, thường là A,B,C,...; 
+định dạng cũng là multiple correct answers giống như câu hỏi loại Sentence Completion, tuy nhiên các đáp án chấp nhận được chỉ là dạng viết thường/hoa của label đúng.
+
+**Label a Map**
+
+- Description: Đề thi sẽ cung cấp một hình ảnh minh hoạ cho một bản đồ chưa được label (có các khu vực được đánh số/chữ nhưng chưa gán tên); yêu cầu thí sinh điền label của từng khu vực trên bản đồ dựa trên đoạn thoại.
+- Định dạng câu hỏi trên text/script: 
++ Để làm việc với ảnh theo format ở trên: 
+"
+Images are included with the standard Markdown syntax:
+
+![alt_text](image_file)
+It will typically be easiest to put your image files in the same folder or directory as the quiz file, so you can use something like ![alt](image.jpg). However, file paths are supported, including ~ user expansion under all operating systems. All image paths not starting with http:// or https:// are assumed to refer to local image files (files on your machine), and will result in errors if these files are not found.
+"
+Ta sẽ thống nhất rằng tác giả đề thi cần cung cấp ảnh theo phương thức dùng link http; ví dụ họ cần upload ảnh đó lên một folder drive publicly accessible.
++ Bạn hãy truy cập vào link http đó, xem ảnh (chứa bản đồ) để đánh giá đề bài
++ How to check: "Multiple-answers questions use [] or [ ] for incorrect answers and [*] for correct answers."; 
+
+**Label a Diagram**
+
+- Description: Đề thi sẽ cung cấp một hình ảnh minh hoạ cho một sơ đồ có một số thông tin còn thiếu. Các phần thông tin đó sẽ được label (là số thứ tự câu hỏi); thí sinh cần sử dụng thông tin từ đoạn thoại, kết hợp với tư duy của chính mình để điền vào các chỗ trống.
+- Định dạng câu hỏi: Gần tương tự map labelling.
+
+*Đặc điểm của từng part*
+
+**Part 1**
+
+- Format: Có 2 bên trao đổi về 1 sự kiện, thường là đặt phòng/đặt vé/đặt lịch hẹn/mô tả về sự kiện cuộc thi, trại hè…; có các thông tin cụ thể như họ tên đầy đủ, số điện thoại, giá cả, thông tin liên hệ, thông tin liên quan (VD book hotel → trip purpose/family size…; application → purpose, …)
+- Question type: Sentence Completion
+- Challenge: Thiên về phát âm (s/es; số (8 vs h, 0)) và khả năng thu thập thông tin
+
+**Part 2** 
+
+- Format: Có 1 người độc thoại/thuyết trình về 1 địa điểm/chương trình. Thường sẽ chia làm 2 subtask.
+- Question type: Label a Diagram; Label a Map; Multiple Choice; Sentence Completion
+- Challenge: Gây nhiễu thông tin thông qua paraphrase, cung cấp thông tin thừa, ...
+
+**Part 3**
+
+- Format: Có 1-2 học sinh hoặc/và 1 giảng viên/người hướng dẫn cùng thảo luận 1 vấn đề - bài tập nhóm hay report/exam nào đó.
+Nội dung cuộc trò chuyện xoay quanh tham khảo ý kiến giảng viên hoặc trao đổi các ý tưởng giữa các thành viên trong nhóm học sinh; nội dung xoay quanh project/report của các học sinh. 
+Các ý kiến, câu hỏi-đáp hay tranh luận sẽ được đưa ra liên tục.
+- Question type: Label a Diagram; Information Matching; Multiple Choice; Sentence Completion
+
+- Challenge: phải biết một lượng từ vựng liên quan đến học thuật hoặc hiểu được phần nào kiến thức khoa học được nói đến; phải lưu ý đến ý kiến của từng người, quyết định của cả nhóm hay những lần thông tin được chỉnh sửa, phủ định…
+
+**Part 4**
+
+- Format: Một bài độc thoại của giảng viên và chủ đề của bài giảng này có thể thuộc rất nhiều lĩnh vực. Một số các lĩnh vực phổ biến trong IELTS Listening Section 4. • Khoa học tự nhiên: sinh học, vật lý, hóa học, địa chất,..  • Khoa học xã hội: lịch sử, địa lý, tâm lý học,..  • Nghệ thuật và văn hóa: âm nhạc, hội họa, kiến trúc,...
+- Question type: Sentence Completion
+- Challenge: Nhiều thông tin được cung cấp, mạch thông tin dài, dễ loss track, sử dụng từ vựng hàn lâm và cao cấp hơn các part 1,2,3.
+
+*Một số tiêu chí để chấm đề thi*
+
+Bạn hãy chấm chất lượng của đề thi này một cách công tâm, trung thực và ruthless, dựa trên các tiêu chí sau:
+
+**Độ chuẩn format**
+
+- Description: Hãy kiểm tra chính xác chính tả, format của đề thi (so với các đề thi chuẩn trong ví dụ bạn tìm thấy, so với format chuẩn có thể import lên canvas đã được nêu ở link github trên, và so với các mô tả ở trên). Thêm vào đó, hãy xác định tính đầy đủ và đúng đắn của đáp án được đưa ra và đưa ra điểm số về độ chuẩn format của đề thi trên thang [0, 20].
+Lưu ý: Hãy suy nghĩ kĩ và phân tích đoạn thoại được cung cấp nhằm đánh giá độ chính xác của đáp án, vì đó là phần vô cùng quan trọng trong một đề thi
+Một đề thi đảm bảo có đáp án đầy đủ, chính xác, câu hỏi rõ ràng, đúng ngữ pháp và chính tả, và được viết ở đúng format được nêu ở link github trên, được chấm khoảng 19 điểm.
+- Trọng số tương đối: 0.4
+
+**Độ chuẩn dạng bài**
+
+- Description: Hãy đối chiếu với mô tả về dạng bài, dạng câu hỏi và đặc điểm của từng part và đánh giá độ khớp của đề thi với nó trên thang [0, 20]. 
+Một đề thi gần như giống với các đề thi mẫu được cung cấp trong ví dụ thì có điểm ở tiêu chí này khoảng 18.
+- Trọng số tương đối: 1
+
+**Độ thách thức**
+
+- Description: Hãy đối chiếu với mô tả về thử thách của từng part và sử dụng nhận xét, cảm nhận riêng của bạn về độ khó của đề thi (nó có hóc búa, đánh lừa, cần nhiều bước tư duy, hay cần từ vựng cao cấp không) và đưa ra độ thử thách của đề thi trên thang [0, 100].
+Một đề thi có độ khó tương đương với các đề thi mẫu sẽ có điểm thách thức khoảng 80.
+*Cách chấm điểm*
+- Trọng số tương đối: 0.6
+
+Với mỗi tiêu chí, hãy chấm điểm theo description, sau đó nhân với hệ số tương đối của tiêu chí đó.
+
+Điểm của đề thi chính là tổng của tất cả các hạng tử (tổng của (điểm theo tiêu chí) * (scaling factor)).
+Để ý rằng khi đó tổng điểm số sẽ nằm trong khoảng [0, 40]. Bạn hãy scale điểm đó về thang [0, 100] khi báo cáo.
+
+Nhớ rằng chỉ trả về một số nguyên duy nhất trong khoảng [0, 100] là số điểm của bài. Không trả về bất kỳ đoạn văn bản thừa nào hết.
