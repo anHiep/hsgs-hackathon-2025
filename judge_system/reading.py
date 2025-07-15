@@ -1,4 +1,4 @@
-from tasks.reading import generate_reading_task
+from tasks.reading import generate_reading_part1, generate_reading_part2, generate_reading_part3
 from handler.llm import call_llm
 import re
 
@@ -13,8 +13,13 @@ def reading_evaluation():
 
     print("")
     for i in range(3):
-        print(f"[SYSTEM] Evaluating reading task iteration {i + 1}")
-        task = generate_reading_task()
+        print(f"[SYSTEM] Evaluating reading part {i + 1}")
+        if i == 0:
+            task = generate_reading_part1()
+        elif i == 1:
+            task = generate_reading_part2()
+        else:
+            task = generate_reading_part3()
 
         with open("judge_system/evaluation_prompts/reading.txt", "r") as f:
             eval_prompt = f.read()

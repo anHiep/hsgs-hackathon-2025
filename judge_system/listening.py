@@ -1,4 +1,4 @@
-from tasks.listening import generate_listening_task
+from tasks.listening import generate_listening_part1, generate_listening_part2, generate_listening_part3, generate_listening_part4
 from handler.llm import call_llm
 import re
 
@@ -12,9 +12,16 @@ def listening_evaluation():
     scores = []
 
     print("")
-    for i in range(3):
-        print(f"[SYSTEM] Evaluating listening task iteration {i + 1}")
-        task = generate_listening_task()
+    for i in range(4):
+        print(f"[SYSTEM] Evaluating listening part {i + 1}")
+        if i == 0:
+            task = generate_listening_part1()
+        elif i == 1:
+            task = generate_listening_part2()
+        elif i == 2:
+            task = generate_listening_part3()
+        else:
+            task = generate_listening_part4()
 
         with open("judge_system/evaluation_prompts/listening.txt", "r") as f:
             eval_prompt = f.read()
