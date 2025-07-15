@@ -12,6 +12,6 @@ def generate_reading_task():
             {"role": "user", "content": "Create for me a reading comprehension task based on IELTS. Only return the task, do not return any other text."},
         ]
 
-    response = call_llm(messages=sample_prompt, model="gpt-4o-mini")
+    response = call_llm(messages=sample_prompt, model="openai/gpt-4o-mini")
 
     return response 
