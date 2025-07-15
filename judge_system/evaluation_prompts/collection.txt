@@ -1,0 +1,18 @@
+You have the following information:
+
+### **General format of the quiz**
+
+First, you have to check if the quiz follows the format mentioned here https://github.com/gpoore/text2qti/blob/master/README.md
+
+### **Format Accuracy**
+
+Here, you have to check whether:
+- All the questions are correctly aligned and formated?
+- All the question do not collapse each other?
+- All the question have correct answer? 
+
+### **Language and grammar**
+- Is there any language or grammar errors found in the quiz? Granted, different quizzes would use different language.
+
+You just only need to report "Correct Format" or "Wrong Format" or "Language & Grammar Error" - no further comments are needed
+Only return the API call with one of the above three feedback.

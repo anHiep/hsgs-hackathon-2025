@@ -1,4 +1,4 @@
-from tasks.reading import generate_reading_part1, generate_reading_part2, generate_reading_part3
+from tasks.vocabulary import generate_vocabulary_quiz
 from handler.llm import call_llm
 import re
 
@@ -10,29 +10,25 @@ def extract_score(text):
         return float(last_match)
     return 0.0
 
-def reading_evaluation():
+def vocabulary_evaluation():
     scores = []
 
     print("")
     for i in range(3):
-        print(f"[SYSTEM] Evaluating reading part {i + 1}")
-        if i == 0:
-            task = generate_reading_part1()
-        elif i == 1:
-            task = generate_reading_part2()
-        else:
-            task = generate_reading_part3()
-
-        with open(f"judge_system/output/reading/part{i+1}.txt", "w") as out_f:
+        print(f"[SYSTEM] Evaluating vocabulary quiz iteration {i + 1}")
+        vocabs_set, task  = generate_vocabulary_quiz()
+        
+        with open(f"judge_system/output/vocabulary/quiz{i + 1}.txt", "w") as out_f:
             out_f.write(str(task))
 
-        with open("judge_system/evaluation_prompts/reading.txt", "r") as f:
+        with open("judge_system/evaluation_prompts/vocabulary.txt", "r") as f:
             eval_prompt = f.read()
 
             messages = [
                 {"role": "developer", "content": "You are an IELTS examiner. Be strict and honest."},
-                {"role": "user", "content": f"Regarding the given IELTS Reading part {i+1} test"},
-                {"role": "user", "content": f"{task}"},
+                {"role": "user", "content": f"Regarding the given Vocabulary Quiz on the given Vocab and Phrases Set."},
+                {"role": "user", "content": f"Vocab and Phrases Set: {', '.join(vocabs_set)}"},
+                {"role": "user", "content": f"Quizzes: {task}"},
                 {"role": "user", "content": f"{eval_prompt}"}
             ]
 
@@ -40,12 +36,12 @@ def reading_evaluation():
             score2 = call_llm(messages=messages, model="google/gemini-2.0-flash-001")
             score3 = call_llm(messages=messages, model="google/gemini-2.5-pro")
 
-            with open(f"judge_system/output/reading/part{i+1}_llm_feedback.txt", "w") as out_f:
+            with open(f"judge_system/output/vocabulary/quiz{i+1}_llm_feedback.txt", "w") as out_f:
                 out_f.write(str(score1) + "\n=====\n" + str(score2) + "\n=====\n" + str(score3))
 
             score1 = extract_score(score1)
-            score2 = extract_score(score2)
             score3 = extract_score(score3)
+            score2 = extract_score(score2)
             print(f"[LLM] Score by google/gemini-2.5-flash: {score1}")
             print(f"[LLM] Score by google/gemini-2.0-flash-001: {score2}")
             print(f"[LLM] Score by google/gemini-2.5-pro: {score3}")

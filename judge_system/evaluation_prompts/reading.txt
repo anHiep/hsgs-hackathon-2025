@@ -1,1 +1,169 @@
-Score this reading task for me, only respond this API call with a number from 0 to 100.
+You have the following information:
+
+### **General format of the test**
+
+In terms of content, this test is modeled after the actual IELTS Reading test.
+Please refer to online resources to learn more about the format and content of each part of the IELTS Reading test.
+Note: Independently review at least 15 sample full IELTS Reading test (using online resources) in order to gain a deep understanding of the question types and format.
+
+This test is provided in markdown text format and in a fixed structure so it can be directly converted into a quiz on the Canvas LMS platform.
+Specifically, the format is detailed here: [https://github.com/gpoore/text2qti/blob/master/README.md](https://github.com/gpoore/text2qti/blob/master/README.md).
+Generally, the test includes an introduction, the article text, and then the questions section.
+
+According to the standard IELTS Reading test, each part/section must contain 2 subtasks — two different question types.
+Each part includes one long article (total around 700-900 words), divided into multiple paragraphs labeled from A onwards, usually 6 to 8 paragraphs.
+
+In IELTS Reading, Part 1 must have **exactly 13 questions**, Part 2 **13 questions**, and Part 3 **14 questions**.
+
+It is important to emphasize that in IELTS Reading, **evidence and the answers must appear within the article**.
+
+Questions may come in various forms, and within each type, they may vary — refer to the content below.
+Generally, the possible question types include:
+
+---
+
+### **Sentence Completion**
+
+* **Description**: Fill in the missing information in the blanks.
+* **Question format in text/script**:
+
+```
+Short-answer (fill-in-the-blank) questions use an asterisk followed by one or more spaces or tabs followed by an answer. Multiple acceptable answers can be given. Answers are restricted to a single line each and are treated as plain text, not Markdown.
+
+1.  Who lives at the North Pole?
+*   Santa
+*   Santa Claus
+*   Father Christmas
+*   Saint Nicholas
+*   Saint Nick
+```
+
+In the test text, acceptable answers must be clearly listed, including various possible forms of the answer. For example, if the answer is "January 1", both "January 1" and "1st January" must be accepted.
+This ensures recognition of different spellings (uppercase/lowercase) for the correct answer.
+
+---
+
+### **Information Matching**
+
+* **Description**: There are several statements and the tags True/False/Not Given can be assigned to them; for each statement, select the single appropriate tag.
+* **Question format in text/script**: Tags are typically labeled as T, F, NG;
+  the format is also short-answer as above, with only one correct label per question.
+
+---
+
+### **Heading Matching**
+
+* **Description**: A set of paragraph titles is given; each paragraph must be matched with the most appropriate title.
+* **Question format in text/script**: Short-answer; each paragraph requires filling in the label of the corresponding title.
+
+---
+
+### **Multiple Choice Question**
+
+* **Description**: Each question has several options, usually 3 or 4 (ABC, ABCD); candidates must choose the correct one.
+* **Question format in text/script**: Simple Multiple Choice, refer to the text2qti format linked above.
+
+---
+
+### **Label a Map**
+
+* **Description**: The test provides an image of an unlabeled map (areas numbered/lettered but unnamed); candidates fill in labels based on the text.
+* **Question format in text/script**:
+
+```
+Images are included with the standard Markdown syntax:
+
+![alt_text](image_file)
+```
+
+It is recommended that the author uploads the image via an HTTP link, e.g., via a publicly accessible drive folder.
+
+You should access the HTTP link, view the image (with the map), and assess the task.
+
+**How to make questions**: Short answers, same as above.
+**Note**: This question type is extremely rare in Reading, so it's normal and acceptable to omit.
+
+---
+
+### **Label a Diagram**
+
+* **Description**: The test provides a diagram image with missing information. These are labeled with question numbers; candidates must use information from the text, combined with reasoning, to fill in the blanks.
+* **Question format**: Similar to map labeling.
+  **Note**: This question type is also extremely rare, so it's normal and acceptable to omit.
+
+---
+
+### **Characteristics of each part**
+
+Each part must be divided into 2 subtasks.
+
+* **Part 1**: 2 subtasks — 1 Sentence Completion, 1 other (can be any type)
+* **Part 2**: 2 subtasks — 1 Information Matching (True-False-Not Given), 1 Heading Matching
+* **Part 3**: 2 subtasks — 1 Multiple Choice Question, 1 other (can be any type)
+
+---
+
+### **Interesting and crucial aspects of IELTS Reading**
+
+The main feature of IELTS Reading is its capacity to deceive or challenge the reader.
+This is not achieved through advanced vocabulary or grammar, but via intelligent and subtle embedding of information.
+For example, adding modifiers that slightly alter meaning ("often" vs. "always"), which can lead to misinterpretation if not read carefully.
+
+An IELTS Reading test must challenge candidates in reading comprehension, evidence-finding ability, reasoning, and information synthesis.
+
+---
+
+### **Criteria for Scoring the Test**
+
+You must grade this test honestly, objectively, and ruthlessly, based on the following criteria:
+
+---
+
+### **Format Accuracy**
+
+* **Description**: Check for correct spelling, test formatting (compared to standard examples, to the format importable into Canvas as specified in the GitHub link, and based on the descriptions above).
+  Additionally, assess the completeness and correctness of the provided answers and assign a score between 0-20.
+
+Note: Carefully analyze the article to evaluate the accuracy of the answers, as this is critical in a test.
+
+A test with complete, accurate answers, clear questions, proper grammar and spelling, and written in the correct format per the GitHub guide should score around 19.
+
+* **Relative weight**: 0.3
+* **Common errors**: Incorrect number of questions, missing/wrong answers, incorrect text2qti formatting.
+* **Advanced assessment**: Are the test and questions clear and coherent (with strict evidence from the article)? For Sentence Completion questions, do all answers appear fully in the article?
+
+---
+
+### **Question Type Accuracy**
+
+* **Description**: Compare with the descriptions of question types, and the characteristics of each part, then evaluate alignment on a scale of 0-20.
+  A test closely resembling the provided examples would score around 18.
+
+* **Relative weight**: 0.6
+
+* **Common errors**: Non-conformity with the descriptions, e.g., having the wrong question types.
+
+* **Advanced assessment**: Is the test content consistent with the descriptions and aligned with examples for the corresponding part (in the sample tests you examined)?
+
+---
+
+### **Challenge Level**
+
+* **Description**: Compare with the described challenges above and use your personal judgment of the test’s difficulty (is it tricky, deceptive, requires multiple reasoning steps, or uses advanced vocabulary?) and score on a scale of 0-20.
+* **Example**: 
+
+A test where all evidence can be found by simple skimming and does not require much consideration when answering should have a difficulty score around 9.
+A test matching the difficulty of sample tests would score around 16.
+
+* **Scoring method**:
+* **Relative weight**: 1.1
+* For assessment, refer to the challenge sections of each part above. Additionally, apply your personal judgment to assess the test’s trickiness.
+
+---
+
+For each criterion, score according to the description, then multiply by the relative weight.
+
+The **final score** is the total of all components (sum of (score per criterion) \* (scaling factor)).
+The total score will fall within \[0, 40]. You must **scale this to \[0, 100]** when reporting.
+
+You only need to report **a single final quality score of the test** calculated by the formula above — no further commentary is needed.

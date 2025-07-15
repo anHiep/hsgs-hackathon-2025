@@ -1,0 +1,103 @@
+You have the following information:
+
+### **General format of the quiz**
+
+The quiz is based on the vocabulary covered in the unit "" in the Destination _ book.
+The extracted vocab set is mentioned above.
+
+This quiz is provided in markdown text format and in a fixed structure so it can be directly converted into a quiz on the Canvas LMS platform.
+Specifically, the format is detailed here: [https://github.com/gpoore/text2qti/blob/master/README.md](https://github.com/gpoore/text2qti/blob/master/README.md).
+
+The quiz contains from 100-150 multiple choice questions; each question gives a context passage with a missing part, gives four possible answers and asks for a suitable word in those four to fill in the blank.
+
+You need to judge the quality of that quiz based on that vocab set, using these aspects (each aspect is assigned a different worth of score and way of scoring):
+
+### **Format Accuracy**
+
+* Objective: Ensure the quiz conforms to the aforementioned rules: containing 100-150 multiple choice questions; being written in markdown text format mentioned in the GitHub link
+
+* Score from 0 to 10. A quiz that meets all above regulations should score 10. A quiz that follows the GitHub format but contains less than 100 questions should score proportionally to the amount of questions (e.g 50 -> 5/10).
+
+### **Accuracy and Clarity**
+
+* For each question:
+  * Confirm that the **correct answer fits** the blank naturally.
+  * Ensure **distractors are grammatically correct**, **plausible**, but clearly **not better than the correct answer**.
+
+* Score from 0 to 50
+
+* Example: A test with p percent correct and clear questions should score around p/2 (the score also depends on the severeness of the errors).
+
+### **Vocabulary Coverage & Word Integration**
+
+#### **A. Coverage in Correct Answers**
+
+**Objective**: Most (ideally all) words from the assigned vocabulary list appear as correct answers **at least once**.
+
+**Method**:
+
+* Compare the list of correct answers to the assigned vocabulary list.
+* Accept **inflected/derived forms** (e.g., `decide → decision`, `create → creative`) as coverage if they share a **common stem** or lemma.
+* Count how many vocabulary items are **used as correct answers (or derived forms)**.
+
+**Scoring**:
+
+| % of vocab covered in correct answers | Score (/20) |
+| ------------------------------------- | ----------- |
+| 100%                                  | 20          |
+| 90–99%                                | 17          |
+| 75–89%                                | 14          |
+| 50–74%                                | 8           |
+| <50%                                  | 0           |
+
+#### **B. Integration in Contexts**
+
+**Objective**: Words from the vocabulary list also appear in other parts of the sentence and give important context (not just as options), ideally to reinforce learning.
+
+**Method**:
+
+* Scan all question contexts.
+* Count how many unique vocabulary words appear **anywhere** in the questions **while playing an important contextual role** (e.g., used in the passage to give context of the answer, not just as options).
+
+**Scoring**:
+
+| # of unique vocab words used in context | Score (/10) |
+| --------------------------------------- | ----------- |
+| ≥80%                                    | 10          |
+| 50–79%                                  | 7           |
+| 25–49%                                  | 4           |
+| <25%                                    | 0           |
+
+---
+
+### **Cognitive Challenge & Educational Depth**
+
+**Objective**: Reward questions where the distractors are **close in meaning** to the correct answer — encouraging deeper thinking, not surface recall.
+
+**Method**:
+
+* For each question:
+
+  * Compute semantic similarity (via sentence embeddings) between **correct answer** and each **distractor**.
+  * A “challenging” question is one where **at least one distractor** has a **moderately high similarity** to the correct answer.
+
+**Definition using cosine similarity:**
+
+* Similarity between correct and distractor > 0.4 → considered “close”
+
+**Scoring**:
+
+* Count % of questions with ≥1 close distractor.
+  \| % of questions with close distractors | Score (/10) |
+  \|--------------------------------------|-------------|
+  \| ≥80%                                 | 10          |
+  \| 60–79%                               | 8          |
+  \| 35–59%                               | 6          |
+  \| 15–34%                               | 3           |
+  \| <15%                                 | 0           |
+
+### **What to report**
+
+The quality score of the test is the sum of its scores in each aspects. It can be observed that it will be an integer in the range [0, 100].
+
+You only need to report **a single final quality score of the test** calculated by the formula above — no further commentary is needed.

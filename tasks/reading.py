@@ -1,7 +1,7 @@
 from handler.llm import call_llm
 
 # Nhiệm vụ của bạn chỉ bao gồm trong file này, bạn có thể tạo thêm hàm, sửa đổi nội dung trong hàm này.
-# Bạn KHÔNG được thay đổi tên hàm generate_reading_task. 
+# Bạn KHÔNG được thay đổi tên hàm generate_reading_part. 
 # Bạn CÓ thể sử dụng thư viện ngoài hoặc bất kỳ công cụ gì bạn muốn, không chỉ giới hạn ở việc sử dụng LLM. 
 
 def generate_reading_part1():

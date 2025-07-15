@@ -1,9 +1,10 @@
 # Lựa chọn task, điền vào TASK_ID dưới đây 
-# READING   = 1
-# LISTENING = 2
-# PROMPT    = 3
+# READING    = 1
+# LISTENING  = 2
+# COLLECTION = 3
+# VOCABULARY = 4
 
-TASK_ID = 1
+TASK_ID = 0
 
 # Trong trường hợp tốt nhất, bạn sẽ được phát API key của OpenRouter. Điền vào biến LLM_API_KEY dưới đây.
 # Nhưng nếu không được phát API key từ OpenRouter, hãy tự điền OpenRouter API key của bạn vào.

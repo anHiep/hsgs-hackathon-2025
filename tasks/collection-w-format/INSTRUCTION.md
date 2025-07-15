@@ -8,7 +8,7 @@ Thoải mái tuỳ vào cách làm và công cụ mà bạn muốn dùng.
 
 Các phần code có thể được thực hiện ngay tại folder ```collection-w-format```.
 
-Các đề được tổng hợp và chuẩn hoá phải được lưu tại folder ```bank``` và subfolder ```math, listening, reading``` tương ứng, mỗi đề trong một file txt riêng biệt, riêng các đề listening thì phải lưu 2 file txt và mp3 có tên giống nhau (ví dụ: task1.txt ~ task1.mp3)
+Các đề được tổng hợp và chuẩn hoá phải được lưu tại folder ```bank``` và subfolder ```math, listening, reading``` tương ứng, mỗi đề trong một file txt riêng biệt, riêng các đề listening thì không cần lưu file mp3
 
 ## Các bước thực hiện (gợi ý)
 
