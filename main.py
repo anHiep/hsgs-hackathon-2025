@@ -1,4 +1,10 @@
 from config import TASK_ID
+import os
+
+output_types = ["reading", "listening", "vocabulary", "collection"]
+for output_type in output_types:
+    output_dir = f"./judge_system/output/{output_type}"
+    os.makedirs(output_dir, exist_ok=True)
 
 if TASK_ID not in [1, 2, 3, 4]:
     print("[SYSTEM] Invalid TASK_ID. Please set it to 1 (READING), 2 (LISTENING), or 3 (COLLECTION & FORMAT) in config.")
