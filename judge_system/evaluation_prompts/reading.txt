@@ -1,5 +1,3 @@
-You have the following information:
-
 ### **General format of the test**
 
 In terms of content, this test is modeled after the actual IELTS Reading test.
@@ -13,7 +11,7 @@ Generally, the test includes an introduction, the article text, and then the que
 According to the standard IELTS Reading test, each part/section must contain 2 subtasks — two different question types.
 Each part includes one long article (total around 700-900 words), divided into multiple paragraphs labeled from A onwards, usually 6 to 8 paragraphs.
 
-In IELTS Reading, Part 1 must have **exactly 13 questions**, Part 2 **13 questions**, and Part 3 **14 questions**.
+In IELTS Reading, Part 1 must have **exactly 13 questions**, Part 2 **13 questions**, and Part 3 **14 questions**. The questions must be numbered from 1 (1-13 for part 1,2 and 1-14 for part 3).
 
 It is important to emphasize that in IELTS Reading, **evidence and the answers must appear within the article**.
 
@@ -53,15 +51,22 @@ This ensures recognition of different spellings (uppercase/lowercase) for the co
 
 ### **Heading Matching**
 
-* **Description**: A set of paragraph titles is given; each paragraph must be matched with the most appropriate title.
+* **Description**: A set of paragraph titles (headings) is given (preferrably around 2-3 more than the number of paragraphs, labelled using undercase roman numbers i,ii,iii,iv,...); each paragraph must be matched with the most appropriate title.
 * **Question format in text/script**: Short-answer; each paragraph requires filling in the label of the corresponding title.
 
 ---
 
 ### **Multiple Choice Question**
 
+There are 2 sub-types:
+
+**Multiple MCQs**
 * **Description**: Each question has several options, usually 3 or 4 (ABC, ABCD); candidates must choose the correct one.
 * **Question format in text/script**: Simple Multiple Choice, refer to the text2qti format linked above.
+
+**Single MCQ**
+* **Description**: There are 5 statements; candidates must choose 2 of them which agrees/fits with the information given by the article.
+* **Question format in text/script**: Multiple choice; each choice contains the statement along with its label (ABCDE).
 
 ---
 
@@ -95,11 +100,13 @@ You should access the HTTP link, view the image (with the map), and assess the t
 
 ### **Characteristics of each part**
 
-Each part must be divided into 2 subtasks.
+Each part must be divided into 2 or 3 subtasks.
 
-* **Part 1**: 2 subtasks — 1 Sentence Completion, 1 other (can be any type)
-* **Part 2**: 2 subtasks — 1 Information Matching (True-False-Not Given), 1 Heading Matching
-* **Part 3**: 2 subtasks — 1 Multiple Choice Question, 1 other (can be any type)
+* **Part 1**: Has 1 Sentence Completion, others can be any type
+* **Part 2**: Has 1 Information Matching (True-False-Not Given), 1 Heading Matching, and (not necessary) 1 Multiple Choice Question (single) or 1 (more) Information Matching.
+* **Part 3**: Has 1 Multiple Choice Question, others can be any type
+
+You can also refer to the example to learn more about the patterns of question types in each part.
 
 ---
 
@@ -153,7 +160,11 @@ A test with complete, accurate answers, clear questions, proper grammar and spel
 * **Example**: 
 
 A test where all evidence can be found by simple skimming and does not require much consideration when answering should have a difficulty score around 9.
-A test matching the difficulty of sample tests would score around 16.
+A test matching the difficulty of sample tests would score around 20. 
+A test that could closely resemble that difficulty and trickiness (at least 60 percent -- that means that inference-heavy or deceiving questions sometimes occur) should score at least 16.
+A test that has some rare signs of that difficulty and trickiness (not all questions are easy and straightforward) should score at least 12.
+Otherwise, the score should be from 8-11, proportional to the simplicity of the test. 
+It should be noted that at this low level of difficulty, there is not much to debate, so the score range is fixed unnaturally to ensure more balanced overall score.
 
 * **Scoring method**:
 * **Relative weight**: 1.1
@@ -164,6 +175,8 @@ A test matching the difficulty of sample tests would score around 16.
 For each criterion, score according to the description, then multiply by the relative weight.
 
 The **final score** is the total of all components (sum of (score per criterion) \* (scaling factor)).
-The total score will fall within \[0, 40]. You must **scale this to \[0, 100]** when reporting.
+Note that the final score will fall within \[0, 40]. You must **scale this to \[0, 100]** when reporting. In order to accomplish that, it is enough to just multiply the score in [0, 40] with a constant factor of 2.5.
 
-You only need to report **a single final quality score of the test** calculated by the formula above — no further commentary is needed.
+At the end, you must report **a single final quality score of the test** calculated by the formula above. Note that this must be at the end of the report.
+Report it in this format: "### **Overall quality score:** X/100" with X as the score you calculated.
+After this line there should be no further comments. Give all your thoughts ABOVE this ending report line.
