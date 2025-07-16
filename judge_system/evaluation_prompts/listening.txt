@@ -1,3 +1,5 @@
+You have the following information:
+
 **General format of the test**
 
 Of course, the main language of the test is English \:D
@@ -14,8 +16,8 @@ The test may be divided into multiple sections with different question types, te
 
 Before each subtask begins, there will be a short introduction by the announcer explaining the task, question type, and how to fill in the answers (e.g.: ‘answers consist of one word and/or a number’).
 You can refer to the introductory format in the examples you find.
-
 The test must consist of exactly **10 questions** and should represent a full Part of a standard IELTS Listening test. The questions must be numbered from 1 to 10.
+However, the test should first provide the script, then provide the questions (numbered 1-10), then finally the answer sheet. (* - important)
 
 Questions appear in various formats, and within each type, they may vary — refer to the content below.
 Generally, the possible question types are as follows:
@@ -111,7 +113,7 @@ You must grade the test honestly, objectively, and ruthlessly based on the follo
   Also, assess the completeness and correctness of provided answers and assign a score on a scale of \[0, 20].
   Note: Carefully analyze the provided dialogue to evaluate the accuracy of the answers — this is critical.
   A test with complete, accurate answers, clear, grammatically correct, and formatted properly per the GitHub guide should score around 19.
-* **Note**: Since the test uses script instead of audio, you should not consider the inclusion of the script as not conforming to actual IELTS Listening tests format. However, the misplacement of the script or the introductions should be counted as errors.
+* **Note**: Since the test uses script instead of audio, you should not consider the inclusion of the script as not conforming to actual IELTS Listening tests format. However, the misplacement of the script or the introductions should be counted as errors. Refer to (*) above for more information.
 * **Relative weight**: 0.4
 * **Common errors**: Incorrect number of questions, missing/wrong answers, incorrect text2qti format.
 * **Advanced errors**: Are the test and questions clear and coherent (with strict evidence extractable from the dialogue)?
