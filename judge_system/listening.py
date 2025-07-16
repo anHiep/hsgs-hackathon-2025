@@ -25,10 +25,10 @@ def listening_evaluation():
         else:
             task = generate_listening_part4()
         
-        with open(f"judge_system/output/listening/part{i+1}.txt", "w") as out_f:
+        with open(f"judge_system/output/listening/part{i+1}.txt", "w", encoding="utf-8") as out_f:
             out_f.write(str(task))
 
-        with open("judge_system/evaluation_prompts/listening.txt", "r") as f:
+        with open("judge_system/evaluation_prompts/listening.txt", "r", encoding="utf-8") as f:
             eval_prompt = f.read()
 
             messages = [
@@ -42,7 +42,7 @@ def listening_evaluation():
             score2 = call_llm(messages=messages, model="google/gemini-2.0-flash-001")
             score3 = call_llm(messages=messages, model="google/gemini-2.5-pro")
 
-            with open(f"judge_system/output/listening/part{i+1}_llm_feedback.txt", "w") as out_f:
+            with open(f"judge_system/output/listening/part{i+1}_llm_feedback.txt", "w", encoding="utf-8") as out_f:
                 out_f.write(str(score1) + "\n=====\n" + str(score2) + "\n=====\n" + str(score3))
 
             score1 = extract_score(score1)
