@@ -1,12 +1,10 @@
-You have the following information:
-
 **General format of the test**
 
 Of course, the main language of the test is English \:D
 
 In terms of content, this test is modeled after the actual IELTS Listening test.
 Please refer to online resources to learn more about the format and content of each part of the IELTS Listening test.
-Note: Review 5 examples for the corresponding part as requested to gain a basic understanding of the question types and format.
+Note: Review 10 examples for the corresponding part as requested to gain a basic understanding of the question types and format.
 
 This test is provided in markdown text format and uses a script as a substitute for the audio parts.
 The test is in a fixed format so that it can be directly converted into a quiz on the Canvas LMS platform.
@@ -17,7 +15,7 @@ The test may be divided into multiple sections with different question types, te
 Before each subtask begins, there will be a short introduction by the announcer explaining the task, question type, and how to fill in the answers (e.g.: ‘answers consist of one word and/or a number’).
 You can refer to the introductory format in the examples you find.
 
-The test must consist of exactly **10 questions** and should represent a full Part of a standard IELTS Listening test.
+The test must consist of exactly **10 questions** and should represent a full Part of a standard IELTS Listening test. The questions must be numbered from 1 to 10.
 
 Questions appear in various formats, and within each type, they may vary — refer to the content below.
 Generally, the possible question types are as follows:
@@ -113,6 +111,7 @@ You must grade the test honestly, objectively, and ruthlessly based on the follo
   Also, assess the completeness and correctness of provided answers and assign a score on a scale of \[0, 20].
   Note: Carefully analyze the provided dialogue to evaluate the accuracy of the answers — this is critical.
   A test with complete, accurate answers, clear, grammatically correct, and formatted properly per the GitHub guide should score around 19.
+* **Note**: Since the test uses script instead of audio, you should not consider the inclusion of the script as not conforming to actual IELTS Listening tests format. However, the misplacement of the script or the introductions should be counted as errors.
 * **Relative weight**: 0.4
 * **Common errors**: Incorrect number of questions, missing/wrong answers, incorrect text2qti format.
 * **Advanced errors**: Are the test and questions clear and coherent (with strict evidence extractable from the dialogue)?
@@ -132,7 +131,8 @@ You must grade the test honestly, objectively, and ruthlessly based on the follo
 ### **Challenge Level**
 
 * **Description**: Refer to the challenges described for each part and your own assessment of the test’s difficulty (is it tricky, deceptive, requiring multiple thinking steps, or advanced vocabulary?) and rate it on a scale of \[0, 20].
-  A test matching the difficulty of sample tests would score around 16.
+  A test matching the difficulty of sample tests would score around 18.
+  Note that in actual tests, the relative difficulty of each part is 50-60-70-70 on a scale of 0-100 for parts 1-2-3-4.
 * **Scoring method**
 * **Relative weight**: 0.6
 * **Error checking**: Refer to the challenge section for each part above. Also, use your own judgment to assess the test's trickiness.
@@ -142,6 +142,10 @@ You must grade the test honestly, objectively, and ruthlessly based on the follo
 For each criterion, grade according to the description, then multiply by the relative weight.
 
 The **final score** is the sum of all components (sum of (score per criterion) \* (scaling factor)).
-Note that the final score will fall within \[0, 40]. You must **scale this to \[0, 100]** when reporting.
+Note that the final score will fall within \[0, 40]. You must **scale this to \[0, 100]** when reporting. In order to accomplish that, it is enough to just multiply the score in [0, 40] with a constant factor of 2.5.
 
-You only need to report **a single final quality score of the test** calculated by the formula above — no further commentary is needed.
+Report your comments and thoughts while grading according to the mentioned criterions.
+
+At the end, you must report **a single final quality score of the test** calculated by the formula above. Note that this must be at the end of the report.
+Report it in this format: "### **Overall quality score:** X/100" with X as the score you calculated.
+After this line there should be no further comments. Give all your thoughts ABOVE this ending report line.
